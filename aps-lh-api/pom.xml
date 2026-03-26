@@ -14,19 +14,47 @@
     <artifactId>aps-lh-api</artifactId>
     <name>aps-lh-api</name>
     <version>1.0.3-SNAPSHOT</version>
-    <description>硫化-接口</description>
+    <description>硫化-接口（实体类、枚举、DTO）</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <mybatis-plus.version>3.4.3</mybatis-plus.version>
+        <swagger.version>2.9.2</swagger.version>
     </properties>
 
     <dependencies>
+        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.16</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- MyBatis-Plus 注解 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-annotation</artifactId>
+            <version>${mybatis-plus.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Swagger 注解 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Jackson 注解 -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.12.3</version>
+            <scope>provided</scope>
         </dependency>
 
     </dependencies>
