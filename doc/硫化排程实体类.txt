@@ -3287,9 +3287,9 @@ public class LhShiftFinishQty implements Serializable {
     private String lhMachineCode;
 
     /**
-     * SAP品号
+     * 物料编码
      */
-    private String sapCode;
+    private String materialCode;
 
 		/**
 		 * 一班完成量
